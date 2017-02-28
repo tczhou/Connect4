@@ -36,10 +36,6 @@ void Board::prettyPrintBoard(ostream &os) const {
     return;
 }
 
-PieceType Board::atLocation(int row, int col) {
-    return data[row][col];
-}
-
 int Board::toMove() const {
     return 1;
 }
