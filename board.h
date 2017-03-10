@@ -75,7 +75,9 @@ public:
     // Effects: Makes the move, returning the appropriate result --
     //          IllegalMove, Win, Draw, NoResult. The function itself is
     //          pretty simple, as it uses several helper functions.
-    // Note: parameter col represents array index
+    // Note: Parameter col represents array index.
+	//       Important -- make sure to update next player before detecting
+	//       the correct result (Win, Draw, NoResult).
     // Difficulty: Easy-Medium
     // Topics: Use of private helper functions
     // Calls: getFirstFreeRow, updateToMove, isBoardFull, isWin
@@ -89,8 +91,8 @@ private:
     // Topics: array traversal
     int getFirstFreeRow(int col) const;
 
-    // Effects: Updates the next player to move to be the next player.
-    //          Returns the old, previous player.
+    // Effects: Updates the next player to move to be the next player. 
+    //          Returns the old, previous player. 
     //          Example: If Player 1 just moved, the next player is now Player 2,
     //          while returning Player1.
     // Difficulty: Easy

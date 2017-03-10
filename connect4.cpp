@@ -6,24 +6,6 @@
 #include <cctype>
 using namespace std;
 
-int main(int argc, char *argv[]) {
-    cout << "Press 1 for terminal and 2 for graphics: ";
-    int choice;
-    while (!(cin >> choice)) {
-        cin.clear();
-        string garbage;
-        getline(cin, garbage);
-        cout << "Press 1 for terminal and 2 for graphics: ";
-    }
-    if (choice == 1) {
-        terminalPlay();
-    } else {
-        cout << "Under construction..." << endl;
-        //graphicsPlay(argc, argv);
-    }
-    return 0;
-}
-
 void terminalPlay(){
     cout << "\nEnter: the column to move, q to quit, s to save" << endl;
     cout <<  " enter your move: ";
