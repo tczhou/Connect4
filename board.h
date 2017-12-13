@@ -86,6 +86,12 @@ public:
     // Topics: Use of private helper functions
     // Calls: getFirstFreeRow, updateToMove, isBoardFull, isWin
     Result makeMove(int col);
+    bool case1(int & case1_col);
+    bool case2(int & case2_col);
+    bool case3(int & case3_col);
+    bool case4(int & case4_col);
+    bool case5(int & case5_col);
+    bool case6(int & case6_col);
 
 private:
     // Requires: col must be inbounds of array
